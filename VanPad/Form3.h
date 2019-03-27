@@ -332,7 +332,7 @@ private: System::Void button3_Click(System::Object^  sender, System::EventArgs^ 
 							
 					form1->SuppUnkTegs = false;
 					form1->SaveralFiles = true;
-					label2->Text = "ДНТ: выкл";
+					form1->label2->Text = "Двойные неизвестные теги: выкл";
 					form1->openFileDialog1->Filter = "Текстовые файлы (*.txt)|*.txt|(*.html)|*.html";
 					form1->saveFileDialog1->Filter = "Текстовые файлы (*.txt)|*.txt|(*.html)|*.html";
 					sw->Close();
@@ -361,13 +361,13 @@ private: System::Void button2_Click(System::Object^  sender, System::EventArgs^ 
 					{
 					sw->WriteLine("DoubleTags = true;");
 					form1->SuppUnkTegs = true;
-					form1->label2->Text = "ДНТ: вкл";
+					form1->label2->Text = "Двойные неизвестные теги: вкл";
 					}
 					else
 					{
 						sw->WriteLine("DoubleTags = false;");
 					form1->SuppUnkTegs = false;
-					form1->label2->Text = "ДНТ: выкл";
+					form1->label2->Text = "Двойные неизвестные теги: выкл";
 					}
 					if(checkBox2->Checked)
 					{

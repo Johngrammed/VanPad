@@ -1,7 +1,6 @@
 #pragma once
  #include<windows.h>
-#include <msclr/marshal.h>
-using namespace msclr::interop;
+
 //#include "Classes.h"
 namespace VanPad {
 
@@ -41,9 +40,7 @@ namespace VanPad {
 	public: 
 	public: static bool Options = false;
 	private: System::Windows::Forms::ToolStripStatusLabel^  toolStripStatusLabel7;
-
-	private: 
-
+	public: System::Windows::Forms::Label^  label2;
 	private: System::Windows::Forms::ToolStripMenuItem^  ñîõðàíèòüToolStripMenuItem;
 	public: 
 	private: System::Windows::Forms::ToolStripMenuItem^  êîäèðîâêèToolStripMenuItem;
@@ -52,34 +49,6 @@ namespace VanPad {
 	private: System::Windows::Forms::ToolStripMenuItem^  êîäèðîâêàÂUTF8ToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^  êîäèðîâêàÂUCS2BigEndianToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^  êîäèðîâêàÂUCS2LittleEndianToolStripMenuItem;
-
-	private: System::Windows::Forms::ToolStripMenuItem^  êîäèðîâêèToolStripMenuItem1;
-	private: System::Windows::Forms::ToolStripMenuItem^  êèðèëëèöàToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  windows1251ToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  àðàáñêèéToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  windows1256ToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  áàëòèéñêèéToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  windows1257ToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  èâðèòToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  windows1255ToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripStatusLabel^  toolStripStatusLabel9;
-	private: System::Windows::Forms::ToolStripDropDownButton^  toolStripStatusLabel8;
-	private: System::Windows::Forms::ToolStripMenuItem^  âèäToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  ñòðîêàÑîñòîÿíèÿToolStripMenuItem;
-	public: System::Windows::Forms::ToolStripStatusLabel^  label2;
-	private: System::Windows::Forms::ToolStripStatusLabel^  toolStripStatusLabel2;
-	private: System::Windows::Forms::ToolStripStatusLabel^  toolStripStatusLabel10;
-	public: 
-
-
-
-	public: 
-
-
-
-
-
-
 	public: 
 	public: static bool About = false;
 	
@@ -163,7 +132,7 @@ namespace VanPad {
 	private: System::Windows::Forms::ToolStripSeparator^  toolStripSeparator4;
 	private: System::Windows::Forms::ToolStripSeparator^  toolStripSeparator5;
 	private: System::Windows::Forms::ToolStripSeparator^  toolStripSeparator6;
-
+	private: System::Windows::Forms::ToolStripStatusLabel^  toolStripStatusLabel2;
 	private: System::Windows::Forms::ToolStripStatusLabel^  toolStripStatusLabel3;
 	private: System::Windows::Forms::ToolStripStatusLabel^  toolStripStatusLabel4;
 	public: System::Windows::Forms::ToolStripStatusLabel^  toolStripStatusLabel5;
@@ -214,15 +183,11 @@ private: System::Windows::Forms::ToolStripButton^  toolStripButton18;
 			this->HTML = (gcnew System::Windows::Forms::ToolStripDropDownButton());
 			this->hTMLToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->tXTToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->toolStripStatusLabel9 = (gcnew System::Windows::Forms::ToolStripStatusLabel());
-			this->toolStripStatusLabel8 = (gcnew System::Windows::Forms::ToolStripDropDownButton());
 			this->toolStripStatusLabel2 = (gcnew System::Windows::Forms::ToolStripStatusLabel());
 			this->toolStripStatusLabel3 = (gcnew System::Windows::Forms::ToolStripStatusLabel());
 			this->toolStripStatusLabel4 = (gcnew System::Windows::Forms::ToolStripStatusLabel());
 			this->toolStripStatusLabel5 = (gcnew System::Windows::Forms::ToolStripStatusLabel());
 			this->toolStripStatusLabel6 = (gcnew System::Windows::Forms::ToolStripStatusLabel());
-			this->label2 = (gcnew System::Windows::Forms::ToolStripStatusLabel());
-			this->toolStripStatusLabel10 = (gcnew System::Windows::Forms::ToolStripStatusLabel());
 			this->toolStripStatusLabel7 = (gcnew System::Windows::Forms::ToolStripStatusLabel());
 			this->openFileDialog1 = (gcnew System::Windows::Forms::OpenFileDialog());
 			this->saveFileDialog1 = (gcnew System::Windows::Forms::SaveFileDialog());
@@ -251,23 +216,12 @@ private: System::Windows::Forms::ToolStripButton^  toolStripButton18;
 			this->ïîèñêToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->íàéòèToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->çàìåíèòüToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->âèäToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->ñòðîêàÑîñòîÿíèÿToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->êîäèðîâêèToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->êîäèðîâêàÂANSIToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->êîäèðîâêàÂUTF8ÁåçBOMToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->êîäèðîâêàÂUTF8ToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->êîäèðîâêàÂUCS2BigEndianToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->êîäèðîâêàÂUCS2LittleEndianToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->êîäèðîâêèToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->àðàáñêèéToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->windows1256ToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->áàëòèéñêèéToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->windows1257ToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->êèðèëëèöàToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->windows1251ToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->èâðèòToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->windows1255ToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->íàñòðîéêèToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->îáùèåToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->ñïðàâêàToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
@@ -301,6 +255,7 @@ private: System::Windows::Forms::ToolStripButton^  toolStripButton18;
 			this->toolStripButton19 = (gcnew System::Windows::Forms::ToolStripButton());
 			this->printDocument1 = (gcnew System::Drawing::Printing::PrintDocument());
 			this->printDialog1 = (gcnew System::Windows::Forms::PrintDialog());
+			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->statusStrip1->SuspendLayout();
 			this->menuStrip1->SuspendLayout();
 			this->toolStrip1->SuspendLayout();
@@ -308,11 +263,9 @@ private: System::Windows::Forms::ToolStripButton^  toolStripButton18;
 			// 
 			// statusStrip1
 			// 
-			this->statusStrip1->BackColor = System::Drawing::SystemColors::ButtonFace;
-			this->statusStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(12) {this->toolStripStatusLabel1, 
-				this->HTML, this->toolStripStatusLabel9, this->toolStripStatusLabel8, this->toolStripStatusLabel2, this->toolStripStatusLabel3, 
-				this->toolStripStatusLabel4, this->toolStripStatusLabel5, this->toolStripStatusLabel6, this->label2, this->toolStripStatusLabel10, 
-				this->toolStripStatusLabel7});
+			this->statusStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(8) {this->toolStripStatusLabel1, 
+				this->HTML, this->toolStripStatusLabel2, this->toolStripStatusLabel3, this->toolStripStatusLabel4, this->toolStripStatusLabel5, 
+				this->toolStripStatusLabel6, this->toolStripStatusLabel7});
 			this->statusStrip1->Location = System::Drawing::Point(0, 474);
 			this->statusStrip1->Name = L"statusStrip1";
 			this->statusStrip1->Size = System::Drawing::Size(706, 24);
@@ -353,95 +306,49 @@ private: System::Windows::Forms::ToolStripButton^  toolStripButton18;
 			this->tXTToolStripMenuItem->Text = L"txt.";
 			this->tXTToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::tXTToolStripMenuItem_Click);
 			// 
-			// toolStripStatusLabel9
-			// 
-			this->toolStripStatusLabel9->BorderSides = System::Windows::Forms::ToolStripStatusLabelBorderSides::Left;
-			this->toolStripStatusLabel9->Margin = System::Windows::Forms::Padding(19, 3, 0, 2);
-			this->toolStripStatusLabel9->Name = L"toolStripStatusLabel9";
-			this->toolStripStatusLabel9->Size = System::Drawing::Size(4, 19);
-			// 
-			// toolStripStatusLabel8
-			// 
-			this->toolStripStatusLabel8->BackColor = System::Drawing::SystemColors::ButtonFace;
-			this->toolStripStatusLabel8->Margin = System::Windows::Forms::Padding(0, 3, 0, 2);
-			this->toolStripStatusLabel8->Name = L"toolStripStatusLabel8";
-			this->toolStripStatusLabel8->RightToLeft = System::Windows::Forms::RightToLeft::Yes;
-			this->toolStripStatusLabel8->Size = System::Drawing::Size(52, 19);
-			this->toolStripStatusLabel8->Text = L"UTF-8";
-			// 
 			// toolStripStatusLabel2
 			// 
 			this->toolStripStatusLabel2->BorderStyle = System::Windows::Forms::Border3DStyle::Etched;
 			this->toolStripStatusLabel2->Name = L"toolStripStatusLabel2";
-			this->toolStripStatusLabel2->Size = System::Drawing::Size(52, 19);
+			this->toolStripStatusLabel2->Size = System::Drawing::Size(247, 19);
 			this->toolStripStatusLabel2->Spring = true;
 			// 
 			// toolStripStatusLabel3
 			// 
-			this->toolStripStatusLabel3->BackColor = System::Drawing::SystemColors::ButtonFace;
 			this->toolStripStatusLabel3->BorderSides = System::Windows::Forms::ToolStripStatusLabelBorderSides::Left;
 			this->toolStripStatusLabel3->BorderStyle = System::Windows::Forms::Border3DStyle::Etched;
 			this->toolStripStatusLabel3->ForeColor = System::Drawing::SystemColors::ControlText;
 			this->toolStripStatusLabel3->Name = L"toolStripStatusLabel3";
 			this->toolStripStatusLabel3->Size = System::Drawing::Size(60, 19);
 			this->toolStripStatusLabel3->Text = L"length : 0";
-			this->toolStripStatusLabel3->ToolTipText = L"Âñåãî ñèìâîëîâ";
 			// 
 			// toolStripStatusLabel4
 			// 
-			this->toolStripStatusLabel4->BackColor = System::Drawing::SystemColors::ButtonFace;
 			this->toolStripStatusLabel4->Margin = System::Windows::Forms::Padding(0, 3, 50, 2);
 			this->toolStripStatusLabel4->Name = L"toolStripStatusLabel4";
 			this->toolStripStatusLabel4->Size = System::Drawing::Size(46, 19);
 			this->toolStripStatusLabel4->Text = L"lines : 0";
-			this->toolStripStatusLabel4->ToolTipText = L"Âñåãî ñòðîê";
 			// 
 			// toolStripStatusLabel5
 			// 
-			this->toolStripStatusLabel5->BackColor = System::Drawing::SystemColors::ButtonFace;
 			this->toolStripStatusLabel5->BorderSides = System::Windows::Forms::ToolStripStatusLabelBorderSides::Left;
 			this->toolStripStatusLabel5->BorderStyle = System::Windows::Forms::Border3DStyle::Etched;
 			this->toolStripStatusLabel5->Name = L"toolStripStatusLabel5";
 			this->toolStripStatusLabel5->Size = System::Drawing::Size(39, 19);
 			this->toolStripStatusLabel5->Text = L"Ln : 1";
-			this->toolStripStatusLabel5->ToolTipText = L"Òåêóùàÿ ñòðîêà";
 			// 
 			// toolStripStatusLabel6
 			// 
-			this->toolStripStatusLabel6->BackColor = System::Drawing::SystemColors::ButtonFace;
 			this->toolStripStatusLabel6->Margin = System::Windows::Forms::Padding(0, 3, 50, 2);
 			this->toolStripStatusLabel6->Name = L"toolStripStatusLabel6";
 			this->toolStripStatusLabel6->Size = System::Drawing::Size(40, 19);
 			this->toolStripStatusLabel6->Text = L"Col : 0";
-			this->toolStripStatusLabel6->ToolTipText = L"Òåêóùèé ñèìâîë";
-			// 
-			// label2
-			// 
-			this->label2->BorderSides = System::Windows::Forms::ToolStripStatusLabelBorderSides::Left;
-			this->label2->BorderStyle = System::Windows::Forms::Border3DStyle::Etched;
-			this->label2->Name = L"label2";
-			this->label2->Padding = System::Windows::Forms::Padding(4, 0, 0, 0);
-			this->label2->Size = System::Drawing::Size(42, 19);
-			this->label2->Tag = L"Äâîéíûå íåèçâåñòíûå òåãè";
-			this->label2->Text = L"ÄÍÒ:";
-			this->label2->ToolTipText = L"Äâîéíûå íåèçâåñòíûå òåãè";
-			this->label2->Click += gcnew System::EventHandler(this, &Form1::label2_Click);
-			// 
-			// toolStripStatusLabel10
-			// 
-			this->toolStripStatusLabel10->Name = L"toolStripStatusLabel10";
-			this->toolStripStatusLabel10->Size = System::Drawing::Size(43, 19);
-			this->toolStripStatusLabel10->Text = L"            ";
 			// 
 			// toolStripStatusLabel7
 			// 
-			this->toolStripStatusLabel7->BackColor = System::Drawing::SystemColors::ButtonFace;
-			this->toolStripStatusLabel7->BorderSides = System::Windows::Forms::ToolStripStatusLabelBorderSides::Left;
-			this->toolStripStatusLabel7->BorderStyle = System::Windows::Forms::Border3DStyle::Etched;
 			this->toolStripStatusLabel7->Name = L"toolStripStatusLabel7";
-			this->toolStripStatusLabel7->Size = System::Drawing::Size(33, 19);
+			this->toolStripStatusLabel7->Size = System::Drawing::Size(29, 19);
 			this->toolStripStatusLabel7->Text = L"ÂÑÒ";
-			this->toolStripStatusLabel7->ToolTipText = L"Ðåæèì ïå÷àòè";
 			// 
 			// openFileDialog1
 			// 
@@ -449,8 +356,8 @@ private: System::Windows::Forms::ToolStripButton^  toolStripButton18;
 			// 
 			// menuStrip1
 			// 
-			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(8) {this->ôàéëToolStripMenuItem, 
-				this->ðåäàêòèðîâàíèåToolStripMenuItem, this->xToolStripMenuItem, this->ïîèñêToolStripMenuItem, this->âèäToolStripMenuItem, this->êîäèðîâêèToolStripMenuItem, 
+			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(7) {this->ôàéëToolStripMenuItem, 
+				this->ðåäàêòèðîâàíèåToolStripMenuItem, this->xToolStripMenuItem, this->ïîèñêToolStripMenuItem, this->êîäèðîâêèToolStripMenuItem, 
 				this->íàñòðîéêèToolStripMenuItem, this->ñïðàâêàToolStripMenuItem});
 			this->menuStrip1->Location = System::Drawing::Point(0, 0);
 			this->menuStrip1->Name = L"menuStrip1";
@@ -629,33 +536,20 @@ private: System::Windows::Forms::ToolStripButton^  toolStripButton18;
 			this->çàìåíèòüToolStripMenuItem->Text = L"Çàìåíèòü...";
 			this->çàìåíèòüToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::çàìåíèòüToolStripMenuItem_Click);
 			// 
-			// âèäToolStripMenuItem
-			// 
-			this->âèäToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) {this->ñòðîêàÑîñòîÿíèÿToolStripMenuItem});
-			this->âèäToolStripMenuItem->Name = L"âèäToolStripMenuItem";
-			this->âèäToolStripMenuItem->Size = System::Drawing::Size(39, 20);
-			this->âèäToolStripMenuItem->Text = L"Âèä";
-			// 
-			// ñòðîêàÑîñòîÿíèÿToolStripMenuItem
-			// 
-			this->ñòðîêàÑîñòîÿíèÿToolStripMenuItem->CheckOnClick = true;
-			this->ñòðîêàÑîñòîÿíèÿToolStripMenuItem->Name = L"ñòðîêàÑîñòîÿíèÿToolStripMenuItem";
-			this->ñòðîêàÑîñòîÿíèÿToolStripMenuItem->Size = System::Drawing::Size(173, 22);
-			this->ñòðîêàÑîñòîÿíèÿToolStripMenuItem->Text = L"Ñòðîêà ñîñòîÿíèÿ";
-			// 
 			// êîäèðîâêèToolStripMenuItem
 			// 
 			this->êîäèðîâêèToolStripMenuItem->Checked = true;
 			this->êîäèðîâêèToolStripMenuItem->CheckState = System::Windows::Forms::CheckState::Indeterminate;
-			this->êîäèðîâêèToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(6) {this->êîäèðîâêàÂANSIToolStripMenuItem, 
+			this->êîäèðîâêèToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(5) {this->êîäèðîâêàÂANSIToolStripMenuItem, 
 				this->êîäèðîâêàÂUTF8ÁåçBOMToolStripMenuItem, this->êîäèðîâêàÂUTF8ToolStripMenuItem, this->êîäèðîâêàÂUCS2BigEndianToolStripMenuItem, 
-				this->êîäèðîâêàÂUCS2LittleEndianToolStripMenuItem, this->êîäèðîâêèToolStripMenuItem1});
+				this->êîäèðîâêàÂUCS2LittleEndianToolStripMenuItem});
 			this->êîäèðîâêèToolStripMenuItem->Name = L"êîäèðîâêèToolStripMenuItem";
 			this->êîäèðîâêèToolStripMenuItem->Size = System::Drawing::Size(79, 20);
 			this->êîäèðîâêèToolStripMenuItem->Text = L"Êîäèðîâêè";
 			// 
 			// êîäèðîâêàÂANSIToolStripMenuItem
 			// 
+			this->êîäèðîâêàÂANSIToolStripMenuItem->CheckOnClick = true;
 			this->êîäèðîâêàÂANSIToolStripMenuItem->Name = L"êîäèðîâêàÂANSIToolStripMenuItem";
 			this->êîäèðîâêàÂANSIToolStripMenuItem->Size = System::Drawing::Size(246, 22);
 			this->êîäèðîâêàÂANSIToolStripMenuItem->Text = L"Êîäèðîâêà â ANSI";
@@ -663,99 +557,35 @@ private: System::Windows::Forms::ToolStripButton^  toolStripButton18;
 			// 
 			// êîäèðîâêàÂUTF8ÁåçBOMToolStripMenuItem
 			// 
+			this->êîäèðîâêàÂUTF8ÁåçBOMToolStripMenuItem->Checked = true;
+			this->êîäèðîâêàÂUTF8ÁåçBOMToolStripMenuItem->CheckOnClick = true;
+			this->êîäèðîâêàÂUTF8ÁåçBOMToolStripMenuItem->CheckState = System::Windows::Forms::CheckState::Indeterminate;
 			this->êîäèðîâêàÂUTF8ÁåçBOMToolStripMenuItem->Name = L"êîäèðîâêàÂUTF8ÁåçBOMToolStripMenuItem";
 			this->êîäèðîâêàÂUTF8ÁåçBOMToolStripMenuItem->Size = System::Drawing::Size(246, 22);
 			this->êîäèðîâêàÂUTF8ÁåçBOMToolStripMenuItem->Text = L"Êîäèðîâêà â UTF-8 áåç BOM";
-			this->êîäèðîâêàÂUTF8ÁåçBOMToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::êîäèðîâêàÂUTF8ÁåçBOMToolStripMenuItem_Click);
 			// 
 			// êîäèðîâêàÂUTF8ToolStripMenuItem
 			// 
-			this->êîäèðîâêàÂUTF8ToolStripMenuItem->Checked = true;
-			this->êîäèðîâêàÂUTF8ToolStripMenuItem->CheckState = System::Windows::Forms::CheckState::Indeterminate;
+			this->êîäèðîâêàÂUTF8ToolStripMenuItem->CheckOnClick = true;
 			this->êîäèðîâêàÂUTF8ToolStripMenuItem->Name = L"êîäèðîâêàÂUTF8ToolStripMenuItem";
 			this->êîäèðîâêàÂUTF8ToolStripMenuItem->Size = System::Drawing::Size(246, 22);
 			this->êîäèðîâêàÂUTF8ToolStripMenuItem->Text = L"Êîäèðîâêà â UTF-8";
-			this->êîäèðîâêàÂUTF8ToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::êîäèðîâêàÂUTF8ToolStripMenuItem_Click);
 			// 
 			// êîäèðîâêàÂUCS2BigEndianToolStripMenuItem
 			// 
+			this->êîäèðîâêàÂUCS2BigEndianToolStripMenuItem->CheckOnClick = true;
 			this->êîäèðîâêàÂUCS2BigEndianToolStripMenuItem->Font = (gcnew System::Drawing::Font(L"Segoe UI", 9, System::Drawing::FontStyle::Regular, 
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 			this->êîäèðîâêàÂUCS2BigEndianToolStripMenuItem->Name = L"êîäèðîâêàÂUCS2BigEndianToolStripMenuItem";
 			this->êîäèðîâêàÂUCS2BigEndianToolStripMenuItem->Size = System::Drawing::Size(246, 22);
 			this->êîäèðîâêàÂUCS2BigEndianToolStripMenuItem->Text = L"Êîäèðîâêà â UCS-2 Big Endian";
-			this->êîäèðîâêàÂUCS2BigEndianToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::êîäèðîâêàÂUCS2BigEndianToolStripMenuItem_Click);
 			// 
 			// êîäèðîâêàÂUCS2LittleEndianToolStripMenuItem
 			// 
+			this->êîäèðîâêàÂUCS2LittleEndianToolStripMenuItem->CheckOnClick = true;
 			this->êîäèðîâêàÂUCS2LittleEndianToolStripMenuItem->Name = L"êîäèðîâêàÂUCS2LittleEndianToolStripMenuItem";
 			this->êîäèðîâêàÂUCS2LittleEndianToolStripMenuItem->Size = System::Drawing::Size(246, 22);
 			this->êîäèðîâêàÂUCS2LittleEndianToolStripMenuItem->Text = L"Êîäèðîâêà â UCS-2 Little Endian";
-			this->êîäèðîâêàÂUCS2LittleEndianToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::êîäèðîâêàÂUCS2LittleEndianToolStripMenuItem_Click);
-			// 
-			// êîäèðîâêèToolStripMenuItem1
-			// 
-			this->êîäèðîâêèToolStripMenuItem1->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(4) {this->àðàáñêèéToolStripMenuItem, 
-				this->áàëòèéñêèéToolStripMenuItem, this->êèðèëëèöàToolStripMenuItem, this->èâðèòToolStripMenuItem});
-			this->êîäèðîâêèToolStripMenuItem1->Name = L"êîäèðîâêèToolStripMenuItem1";
-			this->êîäèðîâêèToolStripMenuItem1->Size = System::Drawing::Size(246, 22);
-			this->êîäèðîâêèToolStripMenuItem1->Text = L"Êîäèðîâêè";
-			// 
-			// àðàáñêèéToolStripMenuItem
-			// 
-			this->àðàáñêèéToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) {this->windows1256ToolStripMenuItem});
-			this->àðàáñêèéToolStripMenuItem->Name = L"àðàáñêèéToolStripMenuItem";
-			this->àðàáñêèéToolStripMenuItem->Size = System::Drawing::Size(139, 22);
-			this->àðàáñêèéToolStripMenuItem->Text = L"Àðàáñêèé";
-			// 
-			// windows1256ToolStripMenuItem
-			// 
-			this->windows1256ToolStripMenuItem->Name = L"windows1256ToolStripMenuItem";
-			this->windows1256ToolStripMenuItem->Size = System::Drawing::Size(152, 22);
-			this->windows1256ToolStripMenuItem->Text = L"Windows-1256";
-			this->windows1256ToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::windows1256ToolStripMenuItem_Click);
-			// 
-			// áàëòèéñêèéToolStripMenuItem
-			// 
-			this->áàëòèéñêèéToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) {this->windows1257ToolStripMenuItem});
-			this->áàëòèéñêèéToolStripMenuItem->Name = L"áàëòèéñêèéToolStripMenuItem";
-			this->áàëòèéñêèéToolStripMenuItem->Size = System::Drawing::Size(139, 22);
-			this->áàëòèéñêèéToolStripMenuItem->Text = L"Áàëòèéñêèé";
-			// 
-			// windows1257ToolStripMenuItem
-			// 
-			this->windows1257ToolStripMenuItem->Name = L"windows1257ToolStripMenuItem";
-			this->windows1257ToolStripMenuItem->Size = System::Drawing::Size(152, 22);
-			this->windows1257ToolStripMenuItem->Text = L"Windows-1257";
-			this->windows1257ToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::windows1257ToolStripMenuItem_Click);
-			// 
-			// êèðèëëèöàToolStripMenuItem
-			// 
-			this->êèðèëëèöàToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) {this->windows1251ToolStripMenuItem});
-			this->êèðèëëèöàToolStripMenuItem->Name = L"êèðèëëèöàToolStripMenuItem";
-			this->êèðèëëèöàToolStripMenuItem->Size = System::Drawing::Size(139, 22);
-			this->êèðèëëèöàToolStripMenuItem->Text = L"Êèðèëëèöà";
-			// 
-			// windows1251ToolStripMenuItem
-			// 
-			this->windows1251ToolStripMenuItem->Name = L"windows1251ToolStripMenuItem";
-			this->windows1251ToolStripMenuItem->Size = System::Drawing::Size(152, 22);
-			this->windows1251ToolStripMenuItem->Text = L"Windows-1251";
-			this->windows1251ToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::windows1251ToolStripMenuItem_Click);
-			// 
-			// èâðèòToolStripMenuItem
-			// 
-			this->èâðèòToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) {this->windows1255ToolStripMenuItem});
-			this->èâðèòToolStripMenuItem->Name = L"èâðèòToolStripMenuItem";
-			this->èâðèòToolStripMenuItem->Size = System::Drawing::Size(139, 22);
-			this->èâðèòToolStripMenuItem->Text = L"Èâðèò";
-			// 
-			// windows1255ToolStripMenuItem
-			// 
-			this->windows1255ToolStripMenuItem->Name = L"windows1255ToolStripMenuItem";
-			this->windows1255ToolStripMenuItem->Size = System::Drawing::Size(152, 22);
-			this->windows1255ToolStripMenuItem->Text = L"Windows-1250";
-			this->windows1255ToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::windows1255ToolStripMenuItem_Click);
 			// 
 			// íàñòðîéêèToolStripMenuItem
 			// 
@@ -796,10 +626,10 @@ private: System::Windows::Forms::ToolStripButton^  toolStripButton18;
 			// 
 			// tabControl1
 			// 
-			this->tabControl1->Location = System::Drawing::Point(0, 49);
+			this->tabControl1->Location = System::Drawing::Point(0, 65);
 			this->tabControl1->Name = L"tabControl1";
 			this->tabControl1->SelectedIndex = 0;
-			this->tabControl1->Size = System::Drawing::Size(708, 424);
+			this->tabControl1->Size = System::Drawing::Size(708, 408);
 			this->tabControl1->TabIndex = 3;
 			this->tabControl1->SelectedIndexChanged += gcnew System::EventHandler(this, &Form1::tabControl1_SelectedIndexChanged);
 			this->tabControl1->Selected += gcnew System::Windows::Forms::TabControlEventHandler(this, &Form1::tabControl1_Selected);
@@ -810,8 +640,7 @@ private: System::Windows::Forms::ToolStripButton^  toolStripButton18;
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->BackColor = System::Drawing::SystemColors::ButtonFace;
-			this->label1->Location = System::Drawing::Point(263, 62);
+			this->label1->Location = System::Drawing::Point(263, 49);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(204, 13);
 			this->label1->TabIndex = 4;
@@ -1051,11 +880,21 @@ private: System::Windows::Forms::ToolStripButton^  toolStripButton18;
 			this->printDialog1->Document = this->printDocument1;
 			this->printDialog1->UseEXDialog = true;
 			// 
+			// label2
+			// 
+			this->label2->AutoSize = true;
+			this->label2->Location = System::Drawing::Point(537, 49);
+			this->label2->Name = L"label2";
+			this->label2->Size = System::Drawing::Size(147, 13);
+			this->label2->TabIndex = 7;
+			this->label2->Text = L"Äâîéíûå íåèçâåñíûå òåãè:";
+			// 
 			// Form1
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(706, 498);
+			this->Controls->Add(this->label2);
 			this->Controls->Add(this->toolStrip1);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->tabControl1);
@@ -1100,7 +939,7 @@ private: System::Windows::Forms::ToolStripButton^  toolStripButton18;
 							
 					SuppUnkTegs = false;
 					SaveralFiles = true;
-					label2->Text = "ÄÍÒ: âûêë";
+					label2->Text = "Äâîéíûå íåèçâåñòíûå òåãè: âûêë";
 					openFileDialog1->Filter = "Âñå ôàéëû (*.*)|*.*|Òåêñòîâûå ôàéëû (*.txt)|*.txt|(*.html)|*.html";
 					saveFileDialog1->Filter = "Òåêñòîâûå ôàéëû (*.txt)|*.txt|(*.html)|*.html";
 
@@ -1146,12 +985,12 @@ private: System::Windows::Forms::ToolStripButton^  toolStripButton18;
 					if(rline->SelectedText == "true")
 					{
 						SuppUnkTegs = true;
-						label2->Text = "ÄÍÒ: âêë";
+						label2->Text = "Äâîéíûå íåèçâåñòíûå òåãè: âêë";
 					}
 					else
 					{
 						SuppUnkTegs = false;
-						label2->Text = "ÄÍÒ: âûêë";	
+						label2->Text = "Äâîéíûå íåèçâåñòíûå òåãè: âûêë";	
 					}
 
 					rline->Find("SafeMode =");
@@ -1188,22 +1027,22 @@ private: System::Windows::Forms::ToolStripButton^  toolStripButton18;
 					rline->Find(";", rline->SelectionStart, RichTextBoxFinds::None);
 					rline->Find(";", rline->SelectionStart+1, RichTextBoxFinds::None);
 					rline->Select(rline->Find("\"", 0, rline->SelectionStart-2, RichTextBoxFinds::Reverse)+1, rline->Find(";",rline->SelectionStart, RichTextBoxFinds::None) - rline->Find("\"", 0, rline->SelectionStart-2, RichTextBoxFinds::Reverse) - 2);
-					if(Directory::Exists("QuickStart"))
-					{
-						
 					
-								for(int i=0; i < files; i++)
+					for(int i=0; i < files; i++)
 								{
 										
-									if(File::Exists("QuickStart\\"+rline->SelectedText))
+									if(File::Exists(rline->SelectedText))
 									{
-									FS = gcnew FileStream("QuickStart\\"+rline->SelectedText, FileMode::Open);
+									FS = gcnew FileStream(rline->SelectedText, FileMode::Open);
 									SR = gcnew StreamReader(FS);
 										
 									auto tabPage = gcnew System::Windows::Forms::TabPage();
-									tabPage->Text = rline->SelectedText;
-										
-									
+									String^ names = Path::GetFileName(rline->SelectedText);
+									tabPage->Text = names;
+									int tempo = rline->Find(";" ,rline->SelectionStart, RichTextBoxFinds::None);
+									 tempo = rline->Find("\"" ,rline->SelectionStart, RichTextBoxFinds::None);
+									rline->Select(rline->SelectionStart+1, rline->Find("\"",rline->SelectionStart+1, RichTextBoxFinds::None) - tempo - 1);
+									int selectionStart = Int32::Parse(rline->SelectedText);
 
 									this->tabControl1->Controls->Add(tabPage);
 									auto textBoxS = gcnew System::Windows::Forms::TextBox();
@@ -1217,6 +1056,7 @@ private: System::Windows::Forms::ToolStripButton^  toolStripButton18;
 									textBox->Width = tabControl1->Width - 8;
 									textBox->Multiline = true;
 									textBox->Height = tabControl1->Height - 26;
+									textBox->SelectionStart = selectionStart;
 
 									textBox->Text = SR->ReadToEnd();
 
@@ -1252,7 +1092,20 @@ private: System::Windows::Forms::ToolStripButton^  toolStripButton18;
 									rline->Select(rline->Find("\"", 0, rline->SelectionStart-2, RichTextBoxFinds::Reverse)+1, rline->Find(";",rline->SelectionStart, RichTextBoxFinds::None) - rline->Find("\"", 0, rline->SelectionStart-2, RichTextBoxFinds::Reverse) - 2);
 									
 								}
-					}
+					int tempo;
+					rline->Find("SelectedTab =");
+					tempo = rline->Find("=", rline->SelectionStart, RichTextBoxFinds::None);
+					//rline->Find(";", rline->SelectionStart+1, RichTextBoxFinds::None);
+					rline->Select(rline->SelectionStart+2, rline->Find(";",rline->SelectionStart, RichTextBoxFinds::None) - tempo - 2);
+					
+					int SelectedTab = Int32::Parse(rline->SelectedText);
+					tabControl1->SelectedIndex = SelectedTab;
+					/*
+					rline->Find("SelectionStart =");
+					rline->Find(";", rline->SelectionStart, RichTextBoxFinds::None);
+					rline->Find(";", rline->SelectionStart+1, RichTextBoxFinds::None);
+					rline->Select(rline->Find("\"", 0, rline->SelectionStart-2, RichTextBoxFinds::Reverse)+1, rline->Find(";",rline->SelectionStart, RichTextBoxFinds::None) - rline->Find("\"", 0, rline->SelectionStart-2, RichTextBoxFinds::Reverse) - 2);
+					*/
 								fs->Close();
 						sr->Close();
 								FileStream^ FSS = gcnew FileStream ("config.txt", FileMode::Create, FileAccess::Write);
@@ -1295,7 +1148,7 @@ private: System::Windows::Forms::ToolStripButton^  toolStripButton18;
 				 label1->Visible = false;
 				 //tabControl1->SelectedTab = tabPage1;
 				// richTextBox1->Focus();
-				  //label2->Left = this->Width - 212;
+				  label2->Left = this->Width - 212;
 				 //richTextBox1->SelectionChanged += gcnew EventHandler(this, &Form1::RichTextBoxSelectionChanged);
 				 //richTextBox1->TextChanged += gcnew EventHandler(this, &Form1::RichTextBoxTextChanged);
 				 
@@ -1444,9 +1297,7 @@ private: System::Void ñîõðàíèòüÊàêToolStripMenuItem_Click(System::Object^  sende
 		 {
 			 try
 			 {
-				 System::Text::Encoding^ Enc;
-				// switch()
-				
+
 				auto Reader = gcnew IO::StreamWriter(saveFileDialog1->FileName, false, System::Text::Encoding::GetEncoding(1251));
 				auto Tab1 = tabControl1->SelectedTab;
 				for each(Control^ ctrl in Tab1->Controls)
@@ -1536,6 +1387,19 @@ private: System::Void Form1_FormClosing(System::Object^  sender, System::Windows
 
 			 if(SaveralFiles)
 			 {
+				 int RealSelectedTab = tabControl1->SelectedIndex;
+				 int RealSelectionStart;
+
+				 for each(Control^ ctrl1 in tabControl1->SelectedTab->Controls)
+						{
+							if(ctrl1 == dynamic_cast<RichTextBox^>(ctrl1))
+							{
+								 RichTextBox^ tb = dynamic_cast<RichTextBox^>(ctrl1);
+								 RealSelectionStart = tb->SelectionStart;
+							}
+
+						}
+
 				 FileStream^ FS = gcnew FileStream ("config.txt", FileMode::Create, FileAccess::Write);
 				 StreamWriter ^SW = gcnew StreamWriter (FS);
 				 tabControl1->SelectedIndex = 0;
@@ -1560,12 +1424,58 @@ private: System::Void Form1_FormClosing(System::Object^  sender, System::Windows
 
 				 SW->WriteLine("SafeFiles = " + tabControl1->TabCount +";");
 
-				 for(int i = 0; i < tabControl1->TabCount; i++)
+				TCHAR dir[100];
+				String^ direct;
+				GetModuleFileName(NULL,dir,100);
+				direct = gcnew String(dir);
+				direct->LastIndexOf("\\");
+				direct = direct->Remove(direct->LastIndexOf("\\"), direct->Length - direct->LastIndexOf("\\")) + "\\QuickStart\\";
+				String^ name;
+				bool saved;
+				 //for(int i = 0; i < tabControl1->TabCount; i++)
+				// {
+
+					 for each(Control^ ctrl in Tab1->Controls)
 				 {
-					 
-				 SW->WriteLine("\"" + tabControl1->SelectedTab->Text + "\";");
-				 tabControl1->SelectedIndex++;
-				 }
+						TabPage^ tp = dynamic_cast<TabPage^>(ctrl);
+						for each(Control^ ctrl1 in tp->Controls)
+						{
+							if(ctrl1 == dynamic_cast<TextBox^>(ctrl1))
+							{
+								 TextBox^ tb = dynamic_cast<TextBox^>(ctrl1);
+								 name = "";
+								for(int i = tb->Text->LastIndexOf(';')+2; i < tb->Text->Length; i++)
+								{
+									name += tb->Text[i];
+								}
+
+								for each (Control^ ctrl2 in tp->Controls)
+								{
+									if(ctrl2 == dynamic_cast<RichTextBox^>(ctrl2))
+									{
+										RichTextBox^ Rtb = dynamic_cast<RichTextBox^>(ctrl2);
+										if(name != "")
+										{ 
+											SW->WriteLine("\"" + name + "\"; \"" + Rtb->SelectionStart + "\"");
+											saved = true;
+										}
+										else
+										{
+											SW->WriteLine("\"" + direct + tabControl1->SelectedTab->Text + "\"; \"" + Rtb->SelectionStart + "\"");
+											saved = false;
+										}
+									}
+								}
+								 tabControl1->SelectedIndex++;
+							}
+						}
+				}
+
+
+
+				 //}
+				 SW->WriteLine("SelectedTab = " + RealSelectedTab + ";");
+				// SW->WriteLine("SelectionStart = " + RealSelectionStart + ";");
 				 SW->Close();
 				 for each(Control^ ctrl in Tab1->Controls)
 				{
@@ -1577,11 +1487,11 @@ private: System::Void Form1_FormClosing(System::Object^  sender, System::Windows
 							{
 							RichTextBox^ tb = dynamic_cast<RichTextBox^>(ctrl1);
 
-							if(SaveralFiles)
+							if(SaveralFiles && !saved)
 							{
 								if(!Directory::Exists("QuickStart"))
 								{
-								CreateDirectory (L"QuickStart", 0);
+								CreateDirectory ( L"QuickStart", 0);
 								}
 								FileStream^ fs = gcnew FileStream ("QuickStart\\"+tp->Text, FileMode::Create, FileAccess::Write);
 								StreamWriter^ sw = gcnew StreamWriter (fs);
@@ -1620,19 +1530,22 @@ private: System::Void Form1_FormClosing(System::Object^  sender, System::Windows
 							}
 							if(MBox == Windows::Forms::DialogResult::Yes)
 							{
-								 if(saveFileDialog1->ShowDialog() == Windows::Forms::DialogResult::OK)
-									 {
-											auto Reader = gcnew IO::StreamWriter(saveFileDialog1->FileName, false, System::Text::Encoding::GetEncoding(1251));
-											Reader->Write(tb->Text);
-											Reader->Close();
-											tb->Modified = false;
-											break;
-									 }
-								 else
-								 {	
-										e ->Cancel = true;
-										return;
-								 }
+
+								 //if(saveFileDialog1->ShowDialog() == Windows::Forms::DialogResult::OK)
+								//	 {
+										 tabControl1->SelectedTab = tp;
+										 toolStripButton3_Click(sender, e);
+											//auto Reader = gcnew IO::StreamWriter(saveFileDialog1->FileName, false, System::Text::Encoding::GetEncoding(1251));
+											//Reader->Write(tb->Text);
+											//Reader->Close();
+											//tb->Modified = false;
+											//break;
+								//	 }
+								// else
+								// {	
+								//		e ->Cancel = true;
+								//		return;
+								// }
 							}
 							//tb->Modified = false;
 							}
@@ -1801,7 +1714,28 @@ private: System::Void çàêðûòüÂñ¸ToolStripMenuItem_Click(System::Object^  sender,
 			 }
 			  	 if (tabControl1->TabCount == 0)
 			 {
-				 New();
+				 label1->Visible = true;
+				 label1->Enabled = true;
+				 toolStripStatusLabel1->Visible = false;
+				 HTML->Visible = false;
+				 toolStripButton3->Enabled = false;
+				 toolStripButton4->Enabled = false;
+				 toolStripButton5->Enabled = false;
+				 toolStripButton9->Enabled = false;
+				 toolStripButton6->Enabled = false;
+				 toolStripButton7->Enabled = false;
+				 toolStripButton8->Enabled = false;
+				 toolStripButton14->Enabled = false;
+				 toolStripButton10->Enabled = false;
+				 toolStripButton11->Enabled = false;
+				 toolStripButton16->Enabled = false;
+				 toolStripButton15->Enabled = false;
+				 toolStripStatusLabel3->Visible = false;
+				 toolStripStatusLabel4->Visible = false;
+				 toolStripStatusLabel5->Visible = false;
+				 toolStripStatusLabel6->Visible = false;
+				 ResizeAction();
+				 this->Text = "VanPad";
 			 }
 				 return 0;
 		 }
@@ -2341,29 +2275,26 @@ private: System::Void checkBox1_CheckedChanged(System::Object^  sender, System::
 			 {
 				 for each(Control^ ctrl in tabControl1->SelectedTab->Controls)
 							{
-								if(ctrl == dynamic_cast<RichTextBox^>(ctrl))
-								{
 								RichTextBox^ tb = dynamic_cast<RichTextBox^>(ctrl);
 								tb->Focus();
-								}
-				 }
+							}
 			 }
 		 }
 
 private: System::Void ResizeAction()
 		{
-			 label1->Left = (int)(this->Width / 2);
-			 //label2->Left = this->Width - 212;
+						label1->Left = (int)(this->Width / 2.8);
+			 label2->Left = this->Width - 212;
 			 tabControl1->Width = this->Width - 14;
 			   
 
-			 if(this->Width < 350)
+			 if(this->Width < 650)
 			 {
 				 label1->Left = -400;
 			 }
 			 else
 			 {
-				 label1->Left = (int)(this->Width / 2)- 115;
+				 label1->Left = (int)(this->Width / 2.8);
 
 			 }
 			 /////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -2376,11 +2307,9 @@ private: System::Void ResizeAction()
 			 {
 				 toolStripStatusLabel3->Visible = true;
 				 toolStripStatusLabel4->Visible = true;
-				 toolStripStatusLabel8->Visible = true;
-				 toolStripStatusLabel9->Visible = true;
 			 }
 
-			 if(this->Width < 710)
+			 if(this->Width < 510)
 			 {
 				 toolStripStatusLabel3->Visible = false;
 				 toolStripStatusLabel4->Visible = false;
@@ -2389,16 +2318,13 @@ private: System::Void ResizeAction()
 			 {
 				 toolStripStatusLabel3->Visible = true;
 				 toolStripStatusLabel4->Visible = true;
-				 toolStripStatusLabel8->Visible = true;
-				 toolStripStatusLabel9->Visible = true;
 			 }
 
-			 if(this->Width < 554)
+			 if(this->Width < 355)
 			 {
 				 toolStripStatusLabel5->Visible = false;
 				 toolStripStatusLabel6->Visible = false;
-				 tabControl1->Height = this->Height - 109;
-				 
+				 tabControl1->Height = this->Height - 124;
 			 }
 			 else
 			 {
@@ -2406,66 +2332,31 @@ private: System::Void ResizeAction()
 				 {
 				 toolStripStatusLabel5->Visible = true;
 				 toolStripStatusLabel6->Visible = true;
-				 tabControl1->Height = this->Height - 111;
+				 tabControl1->Height = this->Height - 126;
 				 }
 				 else
-				 {
-				tabControl1->Height = this->Height - 111;
-				tabControl1->Top = 65;
-				 }
+				 tabControl1->Height = this->Height - 124;
 			 }
 
 
-			 if(this->Width < 424)
+			 if(this->Width < 280)
 			 {
 				 toolStripStatusLabel1->Visible = false;
-				 toolStripStatusLabel10->Visible = false;
-				 toolStripStatusLabel9->Visible = false;
-				 toolStripStatusLabel8->Visible = false;
-				 //label2->Left = 2;
-				 //if(SuppUnkTegs)
-				 //label2->Text = "Äâîéíûå òåãè +";
-				 //else
-				 //label2->Text = "Äâîéíûå òåãè: -";
+				 label2->Left = 2;
+				 if(SuppUnkTegs)
+				 label2->Text = "Äâîéíûå òåãè +";
+				 else
+				 label2->Text = "Äâîéíûå òåãè: -";
 			 }
 			 else
 			 {
 				 if(tabControl1->SelectedTab)
-				 {
 				 toolStripStatusLabel1->Visible = true;
-				 toolStripStatusLabel10->Visible = true;
-				 toolStripStatusLabel9->Visible = true;
-				 toolStripStatusLabel8->Visible = true;
-				 }
-				 //if(SuppUnkTegs)
-				 ////label2->Text = "Äâîéíûå íåèçâåñòíûå òåãè: âêë";
-				 //else
-				 //label2->Text = "Äâîéíûå íåèçâåñòíûå òåãè: âûêë";
+				 if(SuppUnkTegs)
+				 label2->Text = "Äâîéíûå íåèçâåñòíûå òåãè: âêë";
+				 else
+				 label2->Text = "Äâîéíûå íåèçâåñòíûå òåãè: âûêë";
 			 }
-
-			 if(this->Width < 141)
-			 {
-				 HTML->Visible = false;
-				 label2->BorderSides = ((System::Windows::Forms::ToolStripStatusLabelBorderSides)(System::Windows::Forms::ToolStripStatusLabelBorderSides::None));
-				 //label2->Left = 2;
-				 //if(SuppUnkTegs)
-				 //label2->Text = "Äâîéíûå òåãè +";
-				 //else
-				 //label2->Text = "Äâîéíûå òåãè: -";
-			 }
-			 else
-			 {
-				 if(tabControl1->SelectedTab)
-				 {
-				 HTML->Visible = true;
-				  label2->BorderSides = ((System::Windows::Forms::ToolStripStatusLabelBorderSides)(System::Windows::Forms::ToolStripStatusLabelBorderSides::Left));
-				 }
-				 //if(SuppUnkTegs)
-				 ////label2->Text = "Äâîéíûå íåèçâåñòíûå òåãè: âêë";
-				 //else
-				 //label2->Text = "Äâîéíûå íåèçâåñòíûå òåãè: âûêë";
-			 }
-
 			 if(this->Height < 250 && tabControl1->TabCount > 0)
 			 {
 				 statusStrip1->Visible = false;
@@ -2502,7 +2393,7 @@ private: System::Void ResizeAction()
 			 {
 				menuStrip1->Visible = true;
 				tabControl1->Height = this->Height - 88;
-				//tabControl1->Top = 65;
+				tabControl1->Top = 65;
 				toolStrip1->Visible = true;
 				statusStrip1->Visible  = false;
 				label2->Visible = true;
@@ -2521,7 +2412,7 @@ private: System::Void ResizeAction()
 			 {
 					toolStrip1->Visible = true;
 					tabControl1->Height = this->Height - 88;
-					//tabControl1->Top = 65;
+					tabControl1->Top = 65;
 					menuStrip1->Visible = true;
 					statusStrip1->Visible = true;
 					 label2->Visible = true;
@@ -2540,7 +2431,7 @@ private: System::Void ResizeAction()
 				 {
 					 toolStrip1->Visible = true;
 					tabControl1->Height = this->Height - 88;
-					//tabControl1->Top = 65;
+					tabControl1->Top = 65;
 					
 					 label2->Visible = true;
 				statusStrip1->Visible = true;
@@ -2548,7 +2439,7 @@ private: System::Void ResizeAction()
 				 }
 			 else
 				 {
-					 tabControl1->Top = 50;
+					 tabControl1->Top = 65;
 					 label2->Visible = true;
 				statusStrip1->Visible = true;
 				toolStrip1->Visible = true;
@@ -2955,8 +2846,6 @@ private: System::Void printDocument1_BeginPrint(System::Object^  sender, System:
 		wchar_t param = { '\n' };
 		for each(Control^ ctrl1 in tabControl1->SelectedTab->Controls)
 					{
-						if(ctrl1 == dynamic_cast<RichTextBox^>(ctrl1))
-							{
 						RichTextBox^ tb = dynamic_cast<RichTextBox^>(ctrl1);
 						lines = tb->Text->Split(param);
 
@@ -2967,7 +2856,6 @@ private: System::Void printDocument1_BeginPrint(System::Object^  sender, System:
 						for each (String^ s in lines)
 						{
 							lines[i++] = s->TrimEnd(trimParam);
-						}
 						}
 					}
 		 }
@@ -3068,237 +2956,7 @@ private: System::Void HTML_TextChanged(System::Object^  sender, System::EventArg
 private: System::Void ñîõðàíèòüToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
 			 toolStripButton3_Click(sender,e);
 		 }
-
-		 //EncodingSelect(int current)
-		// {
-		//	 GetAllMenuNames(êîäèðîâêèToolStripMenuItem);
-		// }
-
-private: System::Void GetAllMenuNames(ToolStripMenuItem^ menu,ToolStripMenuItem^ dir)
-        {
-            for each (ToolStripMenuItem^ itm in dir->DropDownItems)
-            {
-				ToolStripMenuItem^  name = dynamic_cast<ToolStripMenuItem^>(itm);
-				if(name != menu)
-				name->Checked = false;
-				else
-				{
-					name->Checked = true;
-					name->CheckState = System::Windows::Forms::CheckState::Indeterminate;
-					toolStripStatusLabel8->Text = name->Text;
-				}
-
-				if(name->DropDownItems)
-				{
-					GetAllMenuNames(menu, name);
-				}
-               // ToolStripDropDownItem dropDown = itm as ToolStripDropDownItem;
-               // if (dropDown != null)
-               //     GetAllMenuNames(dropDown->DropDownItems);
-            }
-        }
-
 private: System::Void êîäèðîâêàÂANSIToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-			GetAllMenuNames(êîäèðîâêàÂANSIToolStripMenuItem,êîäèðîâêèToolStripMenuItem);
-			toolStripStatusLabel8->Text = "ANSI";
-			for each(Control^ ctrl1 in tabControl1->SelectedTab->Controls)
-					{
-						if(ctrl1 == dynamic_cast<RichTextBox^>(ctrl1))
-							{
-						RichTextBox^ tb = dynamic_cast<RichTextBox^>(ctrl1);
-						marshal_context ^ context = gcnew marshal_context();
-						const char* str1 = context->marshal_as<const char*>(tb->Text);
-
-						String ^s2 = gcnew String( str1, 0, tb->Text->Length, System::Text::Encoding::GetEncoding(65001) );
-						
-						tb->Text = s2->ToString();
-						}
-					}
-
 		 }
-private: System::Void êîäèðîâêàÂUTF8ÁåçBOMToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-			GetAllMenuNames(êîäèðîâêàÂUTF8ÁåçBOMToolStripMenuItem,êîäèðîâêèToolStripMenuItem);
-			toolStripStatusLabel8->Text = "UTF-8 Áåç BOM";
-			for each(Control^ ctrl1 in tabControl1->SelectedTab->Controls)
-					{
-						if(ctrl1 == dynamic_cast<RichTextBox^>(ctrl1))
-							{
-						RichTextBox^ tb = dynamic_cast<RichTextBox^>(ctrl1);
-						marshal_context ^ context = gcnew marshal_context();
-						const char* str1 = context->marshal_as<const char*>(tb->Text);
-
-						String ^s2 = gcnew String( str1, 0, tb->Text->Length, System::Text::Encoding::GetEncoding(65001) );
-						
-						tb->Text = s2->ToString();
-						}
-					}
-		 }
-private: System::Void êîäèðîâêàÂUTF8ToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-			GetAllMenuNames(êîäèðîâêàÂUTF8ToolStripMenuItem,êîäèðîâêèToolStripMenuItem);
-			toolStripStatusLabel8->Text = "UTF-8";
-			for each(Control^ ctrl1 in tabControl1->SelectedTab->Controls)
-					{
-						if(ctrl1 == dynamic_cast<RichTextBox^>(ctrl1))
-							{
-						RichTextBox^ tb = dynamic_cast<RichTextBox^>(ctrl1);
-						marshal_context ^ context = gcnew marshal_context();
-						const char* str1 = context->marshal_as<const char*>(tb->Text);
-
-						String ^s2 = gcnew String( str1, 0, tb->Text->Length, System::Text::Encoding::GetEncoding(65001) );
-						
-						tb->Text = s2->ToString();
-						}
-					}
-			
-		 }
-private: System::Void êîäèðîâêàÂUCS2BigEndianToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-			 GetAllMenuNames(êîäèðîâêàÂUCS2BigEndianToolStripMenuItem,êîäèðîâêèToolStripMenuItem);
-			 toolStripStatusLabel8->Text = "UCS-2 Big Endian";
-			 for each(Control^ ctrl1 in tabControl1->SelectedTab->Controls)
-					{
-						if(ctrl1 == dynamic_cast<RichTextBox^>(ctrl1))
-							{
-						RichTextBox^ tb = dynamic_cast<RichTextBox^>(ctrl1);
-						marshal_context ^ context = gcnew marshal_context();
-						const char* str1 = context->marshal_as<const char*>(tb->Text);
-
-						String ^s2 = gcnew String( str1, 0, tb->Text->Length, System::Text::Encoding::GetEncoding(65001) );
-						
-						tb->Text = s2->ToString();
-						}
-					}
-		 }
-private: System::Void êîäèðîâêàÂUCS2LittleEndianToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-			 GetAllMenuNames(êîäèðîâêàÂUCS2LittleEndianToolStripMenuItem,êîäèðîâêèToolStripMenuItem);
-			 toolStripStatusLabel8->Text = "UCS-2 Little Endian";
-			 for each(Control^ ctrl1 in tabControl1->SelectedTab->Controls)
-					{
-						if(ctrl1 == dynamic_cast<RichTextBox^>(ctrl1))
-							{
-						RichTextBox^ tb = dynamic_cast<RichTextBox^>(ctrl1);
-						marshal_context ^ context = gcnew marshal_context();
-						const char* str1 = context->marshal_as<const char*>(tb->Text);
-
-						String ^s2 = gcnew String( str1, 0, tb->Text->Length, System::Text::Encoding::GetEncoding(65001) );
-						
-						tb->Text = s2->ToString();
-						}
-					}
-		 }
-private: System::Void windows1251ToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-			 GetAllMenuNames(windows1251ToolStripMenuItem,êîäèðîâêèToolStripMenuItem);
-			 toolStripStatusLabel8->Text = "Windows-1251";
-			for each(Control^ ctrl1 in tabControl1->SelectedTab->Controls)
-					{
-						if(ctrl1 == dynamic_cast<RichTextBox^>(ctrl1))
-							{
-						RichTextBox^ tb = dynamic_cast<RichTextBox^>(ctrl1);
-						marshal_context ^ context = gcnew marshal_context();
-						const char* str1 = context->marshal_as<const char*>(tb->Text);
-
-						String ^s2 = gcnew String( str1, 0, tb->Text->Length, System::Text::Encoding::GetEncoding(1251) );
-						
-						tb->Text = s2->ToString();
-						}
-					}
-		 }
-private: System::Void windows1256ToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-			 GetAllMenuNames(windows1256ToolStripMenuItem,êîäèðîâêèToolStripMenuItem);
-			 toolStripStatusLabel8->Text = "Windows-1256";
-			 for each(Control^ ctrl1 in tabControl1->SelectedTab->Controls)
-					{
-						if(ctrl1 == dynamic_cast<RichTextBox^>(ctrl1))
-							{
-						RichTextBox^ tb = dynamic_cast<RichTextBox^>(ctrl1);
-						marshal_context ^ context = gcnew marshal_context();
-						const char* str1 = context->marshal_as<const char*>(tb->Text);
-
-						String ^s2 = gcnew String( str1, 0, tb->Text->Length, System::Text::Encoding::GetEncoding(1256) );
-						
-						tb->Text = s2->ToString();
-						}
-					}
-		 }
-private: System::Void windows1255ToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-			 GetAllMenuNames(windows1255ToolStripMenuItem,êîäèðîâêèToolStripMenuItem);
-			 toolStripStatusLabel8->Text = "Windows-1255";
-			 for each(Control^ ctrl1 in tabControl1->SelectedTab->Controls)
-					{
-						if(ctrl1 == dynamic_cast<RichTextBox^>(ctrl1))
-							{
-						RichTextBox^ tb = dynamic_cast<RichTextBox^>(ctrl1);
-						marshal_context ^ context = gcnew marshal_context();
-						const char* str1 = context->marshal_as<const char*>(tb->Text);
-
-						String ^s2 = gcnew String( str1, 0, tb->Text->Length, System::Text::Encoding::GetEncoding(1255) );
-						
-						tb->Text = s2->ToString();
-						}
-					}
-		 }
-private: System::Void windows1257ToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-			 GetAllMenuNames(windows1257ToolStripMenuItem,êîäèðîâêèToolStripMenuItem);
-			 toolStripStatusLabel8->Text = "Windows-1257";
-			 for each(Control^ ctrl1 in tabControl1->SelectedTab->Controls)
-					{
-						if(ctrl1 == dynamic_cast<RichTextBox^>(ctrl1))
-							{
-						RichTextBox^ tb = dynamic_cast<RichTextBox^>(ctrl1);
-						marshal_context ^ context = gcnew marshal_context();
-						const char* str1 = context->marshal_as<const char*>(tb->Text);
-
-						String ^s2 = gcnew String( str1, 0, tb->Text->Length, System::Text::Encoding::GetEncoding(1257) );
-						
-						tb->Text = s2->ToString();
-						}
-					}
-		 }
-private: System::Void label2_Click(System::Object^  sender, System::EventArgs^  e) {
-			 FileStream^ fs = gcnew FileStream ("config.txt", FileMode::Create, FileAccess::Write);
-					StreamWriter^ sw = gcnew StreamWriter (fs);
-					sw->WriteLine("DefaultFormat = .html;");
-
-					if(!SuppUnkTegs)
-					{
-					sw->WriteLine("DoubleTags = true;");
-					SuppUnkTegs = true;
-					label2->Text = "ÄÍÒ: âêë";
-					}
-					else
-					{
-						sw->WriteLine("DoubleTags = false;");
-					SuppUnkTegs = false;
-					label2->Text = "ÄÍÒ: âûêë";
-					}
-					if(SaveralFiles)
-					{
-						sw->WriteLine("SafeMode = true;");
-						SaveralFiles = true;
-					}
-					else
-					{
-						sw->WriteLine("SafeMode = false;");
-						SaveralFiles = false;
-						
-						for each(Control^ ctrl in tabControl1->Controls)
-						{
-							if(ctrl == dynamic_cast<RichTextBox^>(ctrl))
-							{
-							TabPage^ tp = dynamic_cast<TabPage^>(ctrl);
-							//if(tb!= nullptr)tb->Text = tb->Name;
-							for each(Control^ ctrl1 in tp->Controls)
-							{
-								RichTextBox^ tb = dynamic_cast<RichTextBox^>(ctrl1);
-								tb->Modified = true;
-							}
-							}
-							}
-
-					}
-					sw->WriteLine("SafeFiles = 0;");
-					
-					sw->Close();
-					fs->Close();	 
-}
 };
 }

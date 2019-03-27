@@ -1,0 +1,61 @@
+﻿Построение начато 2/23/2019 1:00:13 PM.
+     1>Проект "C:\Users\vania\Downloads\KluchnikIvan\VanPad\VanPad.vcxproj" в узле 2 (целевые объекты build).
+     1>InitializeBuildStatus:
+         Создание "Release\VanPad.unsuccessfulbuild", так как было задано "AlwaysCreate".
+       GenerateTargetFrameworkMonikerAttribute:
+       Целевой объект "GenerateTargetFrameworkMonikerAttribute" пропускается, так как все выходные файлы актуальны по отношению к входным.
+       ClCompile:
+         Для всех выходных данных обновления не требуется.
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr:pure /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _UNICODE /D UNICODE /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\VanPad.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Microsoft.VisualBasic.dll" /FU"c:\Program Files (x86)\Reference Assemblies\Microsoft\VBPowerPacks\v10.0\Microsoft.VisualBasic.PowerPacks.Vs.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt Form2.cpp Form22.cpp Form3.cpp Form4.cpp VanPad.cpp /clr:nostdlib 
+         Form2.cpp
+     1>c:\users\vania\downloads\kluchnikivan\vanpad\Form1.h(1141): warning C4101: Sit: неиспользованная локальная переменная
+     1>c:\users\vania\downloads\kluchnikivan\vanpad\Form1.h(1253): warning C4101: Sit: неиспользованная локальная переменная
+     1>c:\users\vania\downloads\kluchnikivan\vanpad\Form1.h(1358): warning C4101: SW: неиспользованная локальная переменная
+     1>c:\users\vania\downloads\kluchnikivan\vanpad\Form1.h(1357): warning C4101: FS: неиспользованная локальная переменная
+         Form22.cpp
+     1>c:\users\vania\downloads\kluchnikivan\vanpad\Form1.h(1141): warning C4101: Sit: неиспользованная локальная переменная
+     1>c:\users\vania\downloads\kluchnikivan\vanpad\Form1.h(1253): warning C4101: Sit: неиспользованная локальная переменная
+     1>c:\users\vania\downloads\kluchnikivan\vanpad\Form1.h(1358): warning C4101: SW: неиспользованная локальная переменная
+     1>c:\users\vania\downloads\kluchnikivan\vanpad\Form1.h(1357): warning C4101: FS: неиспользованная локальная переменная
+         Form3.cpp
+     1>c:\users\vania\downloads\kluchnikivan\vanpad\Form1.h(1141): warning C4101: Sit: неиспользованная локальная переменная
+     1>c:\users\vania\downloads\kluchnikivan\vanpad\Form1.h(1253): warning C4101: Sit: неиспользованная локальная переменная
+     1>c:\users\vania\downloads\kluchnikivan\vanpad\Form1.h(1358): warning C4101: SW: неиспользованная локальная переменная
+     1>c:\users\vania\downloads\kluchnikivan\vanpad\Form1.h(1357): warning C4101: FS: неиспользованная локальная переменная
+         Form4.cpp
+     1>c:\users\vania\downloads\kluchnikivan\vanpad\Form1.h(1141): warning C4101: Sit: неиспользованная локальная переменная
+     1>c:\users\vania\downloads\kluchnikivan\vanpad\Form1.h(1253): warning C4101: Sit: неиспользованная локальная переменная
+     1>c:\users\vania\downloads\kluchnikivan\vanpad\Form1.h(1358): warning C4101: SW: неиспользованная локальная переменная
+     1>c:\users\vania\downloads\kluchnikivan\vanpad\Form1.h(1357): warning C4101: FS: неиспользованная локальная переменная
+         VanPad.cpp
+     1>c:\users\vania\downloads\kluchnikivan\vanpad\Form1.h(1141): warning C4101: Sit: неиспользованная локальная переменная
+     1>c:\users\vania\downloads\kluchnikivan\vanpad\Form1.h(1253): warning C4101: Sit: неиспользованная локальная переменная
+     1>c:\users\vania\downloads\kluchnikivan\vanpad\Form1.h(1358): warning C4101: SW: неиспользованная локальная переменная
+     1>c:\users\vania\downloads\kluchnikivan\vanpad\Form1.h(1357): warning C4101: FS: неиспользованная локальная переменная
+         Создание кода...
+         Для всех выходных данных обновления не требуется.
+       CoreResGen:
+         Отсутствуют ресурсы, устаревшие по отношению к файлам своих источников. Пропуск формирования ресурсов.
+       ResourceCompile:
+         Для всех выходных данных обновления не требуется.
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\vania\Downloads\KluchnikIvan\Release\VanPad.exe" /INCREMENTAL:NO /NOLOGO /ASSEMBLYRESOURCE:Release\VanPad.Form1.resources /ASSEMBLYRESOURCE:Release\VanPad.Form2.resources /ASSEMBLYRESOURCE:Release\VanPad.Form3.resources /ASSEMBLYRESOURCE:Release\VanPad.Form4.resources /MANIFEST /ManifestFile:"Release\VanPad.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\vania\Downloads\KluchnikIvan\Release\VanPad.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Release\app.res
+         Release\AssemblyInfo.obj
+         Release\Form2.obj
+         Release\Form22.obj
+         Release\Form3.obj
+         Release\Form4.obj
+         Release\stdafx.obj
+         Release\VanPad.obj
+         "Release\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+         VanPad.vcxproj -> C:\Users\vania\Downloads\KluchnikIvan\Release\VanPad.exe
+       Manifest:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\vania\Downloads\KluchnikIvan\Release\VanPad.exe;#1" /manifest Release\VanPad.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Файл "Release\VanPad.unsuccessfulbuild" удаляется.
+         Обращение к "Release\VanPad.lastbuildstate".
+     1>Построение проекта "C:\Users\vania\Downloads\KluchnikIvan\VanPad\VanPad.vcxproj" завершено (целевые объекты build).
+
+Построение успешно завершено.
+
+Затраченное время: 00:00:11.33
