@@ -1,0 +1,4 @@
+DefaultFormat = .html;
+DoubleTags = false;
+SafeMode = false;
+SafeFiles = 0;
