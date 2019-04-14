@@ -1,0 +1,76 @@
+﻿Построение начато 4/14/2019 5:38:21 PM.
+     1>Проект "C:\Users\vania\Desktop\VanPad\VanPad\VanPad.vcxproj" в узле 2 (целевые объекты build).
+     1>PrepareForBuild:
+         Создание каталога "C:\Users\vania\Desktop\VanPad\Release\".
+       InitializeBuildStatus:
+         Создание "Release\VanPad.unsuccessfulbuild", так как было задано "AlwaysCreate".
+       GenerateTargetFrameworkMonikerAttribute:
+       Целевой объект "GenerateTargetFrameworkMonikerAttribute" пропускается, так как все выходные файлы актуальны по отношению к входным.
+       ClCompile:
+         Файл "Release\VanPad.pch" удаляется.
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr:pure /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _UNICODE /D UNICODE /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Release\VanPad.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Microsoft.VisualBasic.dll" /FU"c:\Program Files (x86)\Reference Assemblies\Microsoft\VBPowerPacks\v10.0\Microsoft.VisualBasic.PowerPacks.Vs.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\PresentationCore.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\PresentationFramework.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xaml.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\UIAutomationProvider.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\WindowsBase.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\WindowsFormsIntegration.dll" /analyze- /errorReport:prompt stdafx.cpp /clr:nostdlib 
+         stdafx.cpp
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr:pure /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _UNICODE /D UNICODE /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\VanPad.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Microsoft.VisualBasic.dll" /FU"c:\Program Files (x86)\Reference Assemblies\Microsoft\VBPowerPacks\v10.0\Microsoft.VisualBasic.PowerPacks.Vs.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\PresentationCore.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\PresentationFramework.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xaml.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\UIAutomationProvider.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\WindowsBase.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\WindowsFormsIntegration.dll" /analyze- /errorReport:prompt AssemblyInfo.cpp Form2.cpp Form22.cpp Form3.cpp Form4.cpp VanPad.cpp /clr:nostdlib 
+         AssemblyInfo.cpp
+         Form2.cpp
+     1>c:\users\vania\desktop\vanpad\vanpad\Form1.h(1356): warning C4101: Sit: неиспользованная локальная переменная
+     1>c:\users\vania\desktop\vanpad\vanpad\Form1.h(1460): warning C4101: Sit: неиспользованная локальная переменная
+     1>c:\users\vania\desktop\vanpad\vanpad\Form1.h(1507): warning C4101: Enc: неиспользованная локальная переменная
+     1>c:\users\vania\desktop\vanpad\vanpad\Form1.h(1567): warning C4101: SW: неиспользованная локальная переменная
+     1>c:\users\vania\desktop\vanpad\vanpad\Form1.h(1566): warning C4101: FS: неиспользованная локальная переменная
+         Form22.cpp
+     1>c:\users\vania\desktop\vanpad\vanpad\Form1.h(1356): warning C4101: Sit: неиспользованная локальная переменная
+     1>c:\users\vania\desktop\vanpad\vanpad\Form1.h(1460): warning C4101: Sit: неиспользованная локальная переменная
+     1>c:\users\vania\desktop\vanpad\vanpad\Form1.h(1507): warning C4101: Enc: неиспользованная локальная переменная
+     1>c:\users\vania\desktop\vanpad\vanpad\Form1.h(1567): warning C4101: SW: неиспользованная локальная переменная
+     1>c:\users\vania\desktop\vanpad\vanpad\Form1.h(1566): warning C4101: FS: неиспользованная локальная переменная
+         Form3.cpp
+     1>c:\users\vania\desktop\vanpad\vanpad\Form1.h(1356): warning C4101: Sit: неиспользованная локальная переменная
+     1>c:\users\vania\desktop\vanpad\vanpad\Form1.h(1460): warning C4101: Sit: неиспользованная локальная переменная
+     1>c:\users\vania\desktop\vanpad\vanpad\Form1.h(1507): warning C4101: Enc: неиспользованная локальная переменная
+     1>c:\users\vania\desktop\vanpad\vanpad\Form1.h(1567): warning C4101: SW: неиспользованная локальная переменная
+     1>c:\users\vania\desktop\vanpad\vanpad\Form1.h(1566): warning C4101: FS: неиспользованная локальная переменная
+         Form4.cpp
+     1>c:\users\vania\desktop\vanpad\vanpad\Form1.h(1356): warning C4101: Sit: неиспользованная локальная переменная
+     1>c:\users\vania\desktop\vanpad\vanpad\Form1.h(1460): warning C4101: Sit: неиспользованная локальная переменная
+     1>c:\users\vania\desktop\vanpad\vanpad\Form1.h(1507): warning C4101: Enc: неиспользованная локальная переменная
+     1>c:\users\vania\desktop\vanpad\vanpad\Form1.h(1567): warning C4101: SW: неиспользованная локальная переменная
+     1>c:\users\vania\desktop\vanpad\vanpad\Form1.h(1566): warning C4101: FS: неиспользованная локальная переменная
+         VanPad.cpp
+     1>c:\users\vania\desktop\vanpad\vanpad\Form1.h(1356): warning C4101: Sit: неиспользованная локальная переменная
+     1>c:\users\vania\desktop\vanpad\vanpad\Form1.h(1460): warning C4101: Sit: неиспользованная локальная переменная
+     1>c:\users\vania\desktop\vanpad\vanpad\Form1.h(1507): warning C4101: Enc: неиспользованная локальная переменная
+     1>c:\users\vania\desktop\vanpad\vanpad\Form1.h(1567): warning C4101: SW: неиспользованная локальная переменная
+     1>c:\users\vania\desktop\vanpad\vanpad\Form1.h(1566): warning C4101: FS: неиспользованная локальная переменная
+         Создание кода...
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /clr:pure /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _UNICODE /D UNICODE /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /TP /analyze- /errorReport:prompt "C:\Users\vania\AppData\Local\Temp\.NETFramework,Version=v4.0.AssemblyAttributes.cpp"
+         .NETFramework,Version=v4.0.AssemblyAttributes.cpp
+       CoreResGen:
+         "c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\NETFX 4.0 Tools\resgen.exe" /useSourcePath /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Microsoft.VisualBasic.dll" /r:"c:\Program Files (x86)\Reference Assemblies\Microsoft\VBPowerPacks\v10.0\Microsoft.VisualBasic.PowerPacks.Vs.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\PresentationCore.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\PresentationFramework.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xaml.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\UIAutomationProvider.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\WindowsBase.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\WindowsFormsIntegration.dll" /compile Form1.resX,Release\VanPad.Form1.resources Form2.resx,Release\VanPad.Form2.resources Form3.resx,Release\VanPad.Form3.resources Form4.resx,Release\VanPad.Form4.resources
+         Обрабатывается файл ресурсов "Form1.resX", результирующий объект: "Release\VanPad.Form1.resources".
+         Обрабатывается файл ресурсов "Form2.resx", результирующий объект: "Release\VanPad.Form2.resources".
+         Обрабатывается файл ресурсов "Form3.resx", результирующий объект: "Release\VanPad.Form3.resources".
+         Обрабатывается файл ресурсов "Form4.resx", результирующий объект: "Release\VanPad.Form4.resources".
+       ResourceCompile:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Release\app.res" app.rc 
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\vania\Desktop\VanPad\Release\VanPad.exe" /INCREMENTAL:NO /NOLOGO /ASSEMBLYRESOURCE:Release\VanPad.Form1.resources /ASSEMBLYRESOURCE:Release\VanPad.Form2.resources /ASSEMBLYRESOURCE:Release\VanPad.Form3.resources /ASSEMBLYRESOURCE:Release\VanPad.Form4.resources /MANIFEST /ManifestFile:"Release\VanPad.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\vania\Desktop\VanPad\Release\VanPad.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Release\app.res
+         Release\AssemblyInfo.obj
+         Release\Form2.obj
+         Release\Form22.obj
+         Release\Form3.obj
+         Release\Form4.obj
+         Release\stdafx.obj
+         Release\VanPad.obj
+         "Release\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+         VanPad.vcxproj -> C:\Users\vania\Desktop\VanPad\Release\VanPad.exe
+       Manifest:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\vania\Desktop\VanPad\Release\VanPad.exe;#1" /manifest Release\VanPad.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Файл "Release\VanPad.unsuccessfulbuild" удаляется.
+         Обращение к "Release\VanPad.lastbuildstate".
+     1>Построение проекта "C:\Users\vania\Desktop\VanPad\VanPad\VanPad.vcxproj" завершено (целевые объекты build).
+
+Построение успешно завершено.
+
+Затраченное время: 00:00:17.96
